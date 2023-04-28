@@ -1,0 +1,64 @@
+1 - 91
+
+-----------------------------------------------------------------------------------------------------------------------------------
+2 - 
+
+function Fibonacci(num) {
+  let a = 0;
+  let b = 1;
+  let c = a + b;
+  
+  while (c < num) {
+    a = b;
+    b = c;
+    c = a + b;
+  }
+  
+  if (c === num || num === 0 || num === 1) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+let num = 13;
+if (Fibonacci(num)) {
+  console.log(num + " pertence à sequência de Fibonacci.");
+} else {
+  console.log(num + " não pertence à sequência de Fibonacci.");
+}
+
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+3 - a)9,b)128 c)49, d)100, e)13, f)20
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+4 - a distância entre Ribeirão Preto e Franca é de 100km, então o cruzamento poderia ocorrer a 50km da cidade.
+o carro viaja a 110km por hora sendo mais rápido e tem a tag, ou seja, não perde tempo no pedágio.
+
+o caminhão viaja a 80km por hora, sendo mais lento e em cada pedágio perde cerca de 5 minutos.
+
+sendo assim o carro está mais proximo pois eles ainda não se cruzaram.
+
+-----------------------------------------------------------------------------------------------------------------------------------
+
+5- 
+
+programa {
+  funcao inicio() {
+
+    let string = prompt("Digite um texto:");
+
+
+let string_inverter = "";
+for (let i = string.length - 1; i >= 0; i--) {
+  string_inverter += string[i];
+}
+
+
+console.log("o texto invertido é:", string_inverter);
+    
+  }
+}
